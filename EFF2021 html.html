@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1()
+        {
+            var num = document.getElementById("numero").value;
+            var mail = document.getElementById("mail").value;
+            var rgxmail=/^[a-z-A-Z-0-9]+@[a-z]+\.[a-z]{3}$/;
+            var cin=document.getElementById("cin").value;
+            var rgxcin=/^[A-Z]{2}[0-9]+/;
+            var date = document.getElementById("date").value;
+            var nom = document.getElementById("list").value;
+            var duree = document.getElementById("duree").value;
+            var regex=/^[0-9]+$/;
+            if(!regex.test(duree)|| num==""||date==""||nom==""||mail==""){
+                alert("wwww");
+            }
+            else{
+                alert("les liste est:"+nom+","+num+","+date+","+duree+","+mail+","+cin);
+            }
+            if(rgxmail.test(mail)){
+                alert("jaime");
+            }
+            else{
+                alert("dala")
+            }
+            if(rgxcin.test(cin)){
+                alert("naddy");
+            }
+            else{
+                alert("rechercher")
+            }
+        }
+    </script>
+</head>
+<body>  
+    <form action="">
+        <fieldset>
+            <legend>Gestion Evénément</legend>
+            <table>
+             <tr>
+                 <td>numero événement</td>
+                 <td><input type="text" id="numero"></td>
+             </tr>
+             <tr>
+                <td>E-mail</td>
+                <td><input type="text" id="mail"></td>
+            </tr>
+             <tr>
+                 <td>Date événement:</td>
+               <td> <input type="text" id="date"></td>
+            </tr>
+            <tr>
+                <td>CIN:</td>
+              <td> <input type="text" id="cin"></td>
+           </tr>
+            <tr>
+             <td>Nom Ecole</td>
+             <td>
+                 <select name="" id="list">
+                     <option value="Ecole1">Ecole1</option>
+                     <option value="Ecole2">Ecole2</option>
+                     <option value="Ecole3">Ecole3</option>
+                 </select>
+             </td>
+            </tr>
+            <tr>
+                <td>Durée</td>
+                <td><input type="text" id="duree"></td>
+            </tr> 
+            </table>
+            <input type="button" value=" Affcher les information " onclick="f1()">
+        
+        </fieldset>
+    </form> 
+<!--
+<div style="border: solid 2px  red;">
+     <div class="a1">
+
+       <div>
+           <div class="cla1">
+            <img src="../IMG-20211217-WA0019.jpg" alt="" width="100px">
+                <h2> ISTA NTIC SAFI </h2> <br>
+                <p> Club Robotique </p>
+          
+            <img src="../IMG-20211217-WA0019.jpg" alt="" width="100px">
+
+           </div>         
+       </div>
+     </div>
+    </div>
+    <header>
+        <div style="    border: solid 2px red;margin: 3px 0px 4px;" >         
+            <div  style="align-items: center;">
+                <nav>
+                  <Ul>
+                      <li> <a href=""> home </a> </li>
+                      <li> <a href=""> home </a> </li>
+                      <li> <a href=""> home </a> </li>
+                      <li> <a href=""> home </a> </li>
+                  </Ul>            
+                </nav>
+            </div>    
+        </div>
+    </header>
+
+    <div class="clsection">
+        <div class="section" style="border: solid 2px red; width: 70%;margin: 0px 3px 0px;">        
+            <p style="text-align: center;"> section </p>
+        </div>
+        <div class="section" style="border: solid 2px red; width: 20%;">
+        <p style="text-align: center;"> aside </p>
+        </div>
+    </div>
+    <div class="copy" style="border: solid 2px red; width: 100%;margin: 3px 0px 0px;">
+        <p style="text-align: center;" > Copy </p>
+    </div>
+    <style>
+        .clsection{
+            DISPLAY: FLEX;
+        }
+
+         a{
+            text-decoration: none;
+            padding: 15px;
+
+        }
+        li{
+            list-style: none;
+           
+        }
+        nav{
+            display: flex;
+            font-size: 27px;
+            margin: 12px;
+        }
+        .cla2{
+            text-align: center;
+        }
+        .a1{
+            display: grid;
+        }
+        .cla1{
+            display: flex;
+        }
+    </style> -->
+
+</body>
+</html>
